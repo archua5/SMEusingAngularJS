@@ -1,0 +1,11 @@
+<div fxLayout="row"  fxLayout.xs="column" style="height: 425px; width: 800px;">
+    
+      <mat-tab-group>
+        <div style="background-color: blueviolet; width: 600px; padding-left: 30%;">
+        <mat-tab label="Predict"> <app-homepage></app-homepage></mat-tab>
+        <mat-tab label="Insights"> <app-graphsdisplay> </app-graphsdisplay> </mat-tab>
+        <mat-tab label="Tips & Tricks"> <app-tipsandtricks></app-tipsandtricks> </mat-tab>
+        <button mat-raised-button routerLink=""> Logout</button>
+      </div>
+      </mat-tab-group>
+</div>

@@ -1,0 +1,24 @@
+<div>
+h
+  <div class="toolbar" role="banner">
+    <a routerLink="" routerLinkActive="active">
+      <img
+      width="40"
+      alt="SME Logo"
+      src="assets/logo.jpg"
+      />
+    </a>
+    <span style="color: white;"><a routerLink="" routerLinkActive="active" style="color: white;">Social Media Analyser</a></span>
+    <div class="spacer"></div>
+    <a routerLink="/login" routerLinkActive="active"><button mat-raised-button style="width: 80px;">Login</button></a>
+    <div class="smallspacer"></div>
+    <a routerLink="/signup" routerLinkActive="active"><button mat-raised-button style="width: 80px;">Sign Up</button></a>
+    <div class="smallspacer"></div>
+  </div> 
+  <div class="content" style="background-color: #ffffff; opacity: 100%; width: 800px; height: 450px; padding-top: 5%; border-radius: 5%;">
+    <router-outlet></router-outlet>
+  </div>
+  <a routerLink="/chatbot">
+    <mat-icon style="float: right; color: white; font-size: 40px; margin-right:2% ;">chat</mat-icon>
+  </a>
+</div>

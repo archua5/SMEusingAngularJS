@@ -1,0 +1,32 @@
+
+<div style=" text-align: center;  justify-content: center;">
+<h1 style="text-align: center">Welcome to Social Media Evaluation Application!</h1>
+<h2 style="text-align: center">Predict your social media reach in your fingertips!</h2>
+    <form #login = "ngForm" (ngSubmit)="submit(login)" >
+        <div class="form-group">
+            <mat-form-field appearance="outline" style="width: 500px;">
+                <mat-label>Username</mat-label>
+                <input matInput name="username" class = "form-control" ngModel [(ngModel)]="username">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+       </div>
+        <pre></pre>
+        <div class="form-group">
+            <mat-form-field appearance="outline" style="width: 500px; border-width: 10px;">
+                <mat-label>Number of followers</mat-label>
+                <input matInput name="nof" class = "form-control" ngModel [(ngModel)]="nof">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <pre></pre>
+        <button mat-raised-button type="submit" style="background-color: #571032 ; opacity: 70%; color: white;">Submit</button>
+    </form>
+    <pre></pre>
+    <mat-card style="width: 600px; display: flex;     justify-content: center;">
+        <h2>Your post will get {{result}} likes in 2 hours approximately ! 
+        Congratulations !</h2>
+    </mat-card>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+</div>

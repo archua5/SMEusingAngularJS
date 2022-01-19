@@ -1,0 +1,43 @@
+<div style=" text-align: center;  justify-content: center;">
+<h1 style="text-align: center"><b>SIGNUP</b></h1>
+<form #ss = "ngForm" (ngSubmit)="signupSubmit(ss)" >
+    <div class="form-group">
+        <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Name</mat-label>
+            <input name="name" matInput class = "form-control" ngModel [(ngModel)]="name">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Username</mat-label>
+            <input name="username" matInput class = "form-control" ngModel [(ngModel)]="username">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Password</mat-label>
+            <input name="password" type="password"  matInput class = "form-control" ngModel [(ngModel)]="password">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="form-group">
+        <mat-form-field appearance="outline" style="width: 500px;">
+            <mat-label>Confirm Password</mat-label>
+            <input type="password" name="cpassword" matInput class = "form-control" ngModel [(ngModel)]="cpassword">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+    </div>
+    <pre></pre>
+    <button mat-raised-button type="submit" style="background-color: #571032 ; opacity: 70%; color: white;">Signup</button>
+
+</form>
+<pre></pre>
+    <pre></pre>
+    <pre></pre>
+<a routerLink="/login" routerLinkActive="active">Already have an account? Login!</a>
+
+</div>
+
+

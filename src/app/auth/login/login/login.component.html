@@ -1,0 +1,26 @@
+<div style=" text-align: center;  justify-content: center;">
+    <h1 style="text-align: center"><b>LOGIN</b></h1>
+    <form #ls = "ngForm" (ngSubmit)="loginSubmit(ls)" >
+        <div class="form-group">
+            <mat-form-field appearance="outline" style="width: 500px;">
+                <mat-label>Username</mat-label>
+                <input matInput name="username" class = "form-control" ngModel [(ngModel)]="username">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <mat-form-field appearance="outline" style="width: 500px;">
+                <mat-label>Password</mat-label>
+                <input type="password" name="password" matInput class = "form-control" ngModel [(ngModel)]="password">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <pre></pre>
+        <button mat-raised-button type="submit" style="background-color: #571032 ; opacity: 70%; color: white;">Login</button>
+    </form>
+    <pre></pre>
+    <pre></pre>
+    <pre></pre>
+    <a routerLink="/signup" routerLinkActive="active">Don't have an account? Sign Up!</a>
+
